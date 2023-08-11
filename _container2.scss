@@ -1,0 +1,241 @@
+.container-2 {
+    margin-top: 30px;
+    margin-bottom: 115px;
+    width: 85%;
+    color: #fff;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .container-2-sub {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        position: relative;
+
+        #container-2-left {
+            position: relative;
+            height: 70vh;
+            margin-top: 50px;
+
+            #girlfla-1 {
+                img {
+                    position: absolute;
+                    z-index: 1;
+                    right: 5%;
+                    top: -11%;
+                    width: 140px;
+                }
+            }
+
+            #girlfla-2 {
+                img {
+                    position: absolute;
+                    z-index: 100;
+                    left: -5%;
+                    bottom: -12%;
+                    width: 120px;
+                }
+            }
+
+            #girl {
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+
+        #container-2-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 30px;
+            padding-bottom: 50px;
+
+
+            #container-2-right-para {
+                p {
+                    margin-top: 30px;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            #container-2-right-learn {
+                display: flex;
+                align-items: center;
+
+                div {
+                    background-color: #222222;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+
+                p {
+                    margin-left: -30px;
+                }
+            }
+        }
+
+        .working-world {
+            background-color: #222222;
+            position: absolute;
+            z-index: 1;
+            right: 30%;
+            bottom: -20%;
+            padding: 30px;
+            width: 350px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+// Media Query
+@media only screen and (max-width: 1040px) {
+    .container-2 {
+        .container-2-sub {
+            #container-2-left {
+                height: 50vh;
+
+                #girlfla-1 {
+                    img {
+                        right: 5%;
+                        top: -11%;
+                        width: 100px;
+                    }
+                }
+
+                #girlfla-2 {
+                    img {
+                        left: -5%;
+                        bottom: -12%;
+                        width: 90px;
+                    }
+                }
+            }
+
+            #container-2-right {
+                padding: 29px;
+
+                #container-2-right-para {
+                    p {
+                        margin-top: 10px;
+                        margin-top: 15px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .working-world {
+                padding: 20px;
+                width: 300px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-2 {
+        margin-bottom: 20px;
+        h1 {
+            font-size: 35px;
+            font-weight: 500;
+        }
+        .container-2-sub {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            #container-2-left {
+                width: 100%;
+                height: 60vh;
+
+                #girlfla-1 {
+                    img {
+                        top: -9%;
+                    }
+                }
+
+                #girlfla-2 {
+                    img {
+                        bottom: -9%;
+                    }
+                }
+            }
+            #container-2-right {
+                padding: 30px;
+                padding-bottom: 0px;
+            }
+
+            .working-world {
+                position: relative;
+                right: 0;
+                bottom: 0%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .container-2 {
+        h1 {
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .container-2-sub {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            #container-2-left {
+                height: 40vh;
+                #girlfla-1 {
+                    img {
+                        right: 5%;
+                        top: -14%;
+                        width: 90px;
+                    }
+                }
+
+                #girlfla-2 {
+                    img {
+                        left: -5%;
+                        bottom: -12%;
+                        width: 80px;
+                    }
+                }
+            }
+
+            .working-world {
+                position: relative;
+                right: 0;
+                bottom: 0%;
+                width: 140px;
+                height: 60px;
+                h1{
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.container-3 {
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: auto;
+    color: #fff;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    .container-3-sub{
+        padding: 30px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        .container-3-figure{
+            display: flex;
+            align-items: center;
+            h1{
+                margin-left: 10px;
+                font-size: 35px;
+            }
+            img{
+                width: 90px;
+                height: 80px;
+            }
+        }
+        .container-3-content{
+            div{
+                margin-top: 20px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                img{
+                    height: 2px;
+                    width: 30px;
+                }
+                h1{
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-left: 5px;
+                }
+            }
+            p{
+                font-size: 15px;
+                font-size: 500;
+                text-align: justify;
+                margin-bottom: 10px;
+            }
+            li{
+                font-size: 15px;
+                font-size: 500;
+            }
+        }
+    }
+}
+
+// Media Query
+@media only screen and (max-width: 1225px){
+    .container-3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .container-3-sub{  
+        .container-3-figure{
+            h1{
+                margin-left: 10px;
+                font-size: 24px;
+            }
+            img{
+                width: 60px;
+                height: 50px;
+            }
+        }
+        .container-3-content{
+            div{
+                h1{
+                    font-size: 22px;
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+            li{
+                font-size: 13px;
+            }
+        }
+        }
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .container-3{
+        display: flex;
+        flex-direction: column;
+    }
+}
